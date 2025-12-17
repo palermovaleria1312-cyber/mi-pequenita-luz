@@ -11,128 +11,146 @@
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
 
+  <!-- Barra superior -->
   <div class="topbar">
     <div class="container topbar__inner">
-      <div class="topbar__left">
-        <span class="tag tag--yellow">Admisión 2026</span>
-        <span class="tag tag--blue">Inicial</span>
-        <span class="tag tag--green">Primaria</span>
+      <div class="badges">
+        <span class="badge b-yellow">Admisión 2026</span>
+        <span class="badge b-blue">Inicial</span>
+        <span class="badge b-green">Primaria</span>
       </div>
-      <div class="topbar__right">
-        <a class="toplink" href="https://wa.me/51993558729" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
-          <span class="wicon" aria-hidden="true">WhatsApp</span>
+      <div class="top-actions">
+        <a class="toplink" href="https://wa.me/51993558729" target="_blank" rel="noopener">
+          <span class="toplink__label">WhatsApp</span>
           <strong>+51 993 558 729</strong>
         </a>
       </div>
     </div>
   </div>
 
+  <!-- Header -->
   <header class="header">
     <div class="container header__inner">
       <a class="brand" href="#inicio" aria-label="Inicio">
-        <img src="assets/logo.svg" class="brand__logo" alt="Logo Colegio Mi Pequeñita Luz" />
+        <img src="assets/logo.svg" alt="Logo Mi Pequeñita Luz" class="brand__logo" />
         <div class="brand__text">
           <strong>Mi Pequeñita Luz</strong>
           <span>Inicial y Primaria • San Miguel</span>
         </div>
       </a>
 
-      <nav class="nav" aria-label="Navegación">
+      <nav class="nav" aria-label="Navegación principal">
         <a href="#propuesta">Propuesta</a>
         <a href="#niveles">Niveles</a>
         <a href="#galeria">Galería</a>
         <a href="#contacto">Contacto</a>
-        <a class="btn btn--cta" href="#admisiones">Admisión 2026</a>
+        <a class="btn btn-cta" href="#admisiones">Admisión 2026</a>
       </nav>
 
-      <button class="menu" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">
+      <button id="menuBtn" class="menu" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
 
-    <div class="mobileNav" id="mobileNav" hidden>
+    <div id="mobileNav" class="mobileNav" hidden>
       <a href="#propuesta">Propuesta</a>
       <a href="#niveles">Niveles</a>
       <a href="#galeria">Galería</a>
       <a href="#contacto">Contacto</a>
-      <a class="btn btn--cta" href="#admisiones">Admisión 2026</a>
+      <a class="btn btn-cta" href="#admisiones">Admisión 2026</a>
     </div>
   </header>
 
   <main id="contenido">
+    <!-- HERO (más visual, estilo similar al ejemplo) -->
     <section id="inicio" class="hero">
       <div class="hero__bg" aria-hidden="true"></div>
 
       <div class="container hero__grid">
         <div class="hero__copy">
-          <p class="pill pill--blue">Educación con valores • Acompañamiento cercano</p>
-          <h1>Un colegio donde tu hijo aprende, crece y se siente feliz.</h1>
+          <p class="kicker">SER LOS PRIMEROS NOS EXIGE SER LOS MEJORES</p>
+          <h1>Educación con valores y aprendizaje activo</h1>
           <p class="lead">
-            En <strong>Mi Pequeñita Luz</strong> potenciamos el desarrollo integral desde <strong>Inicial</strong> hasta <strong>Primaria</strong>
-            con un ambiente cálido, actividades dinámicas y seguimiento constante.
+            Acompañamos a cada estudiante desde <strong>Inicial</strong> hasta <strong>Primaria</strong>,
+            con un enfoque cercano, dinámico y orientado a resultados.
           </p>
 
-          <div class="hero__cta">
-            <a class="btn btn--cta" href="#admisiones">Solicitar información (Admisión 2026)</a>
-            <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&query=Av.%20Libertad%202916%20San%20Miguel" target="_blank" rel="noopener">Ver ubicación</a>
+          <div class="ctaRow">
+            <a class="btn btn-cta" href="#admisiones">Solicitar información</a>
+            <a class="btn btn-ghost" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/search/?api=1&query=Av.%20Libertad%202916%20San%20Miguel">
+              Ver ubicación
+            </a>
           </div>
 
-          <div class="hero__meta">
-            <div class="metaCard metaCard--yellow">
-              <div class="metaTitle">📍 Dirección</div>
-              <div class="metaValue">Av. Libertad 2916 - San Miguel</div>
+          <div class="infoCards">
+            <div class="infoCard c-yellow">
+              <div class="infoCard__t">📍 Dirección</div>
+              <div class="infoCard__v">Av. Libertad 2916 - San Miguel</div>
             </div>
-            <div class="metaCard metaCard--green">
-              <div class="metaTitle">🎒 Niveles</div>
-              <div class="metaValue">Inicial y Primaria</div>
+            <div class="infoCard c-blue">
+              <div class="infoCard__t">🎒 Niveles</div>
+              <div class="infoCard__v">Inicial y Primaria</div>
+            </div>
+            <div class="infoCard c-green">
+              <div class="infoCard__t">📲 WhatsApp</div>
+              <div class="infoCard__v">+51 993 558 729</div>
             </div>
           </div>
         </div>
 
         <div class="hero__media">
-          <figure class="photo photo--main">
-            <img src="assets/stock-primaria-2.png" alt="Aula de primaria con alumnos participando" loading="lazy">
+          <figure class="mediaMain">
+            <img data-src="assets/aula-primaria.png" alt="Aula de primaria con estudiantes participando" loading="lazy">
           </figure>
-          <figure class="photo photo--side">
-            <img src="assets/stock-inicial-1.png" alt="Niños de inicial en actividad" loading="lazy">
-          </figure>
-          <figure class="stamp" aria-hidden="true">
-            <div class="stamp__inner">
-              <span class="stamp__top">Admisión</span>
-              <span class="stamp__year">2026</span><br>
-              <span class="stamp__sub">Cupos limitados</span>
+
+          <div class="mediaStrip">
+            <figure class="mediaSmall">
+              <img data-src="assets/inicial-circulo.png" alt="Niños de inicial en actividad" loading="lazy">
+            </figure>
+            <figure class="mediaSmall">
+              <img data-src="assets/primaria-mano-arriba.png" alt="Alumno participando en clase" loading="lazy">
+            </figure>
+          </div>
+
+          <div class="heroBadge" aria-hidden="true">
+            <div class="heroBadge__inner">
+              <span>Admisión</span>
+              <strong>2026</strong>
+              <em>Cupos limitados</em>
             </div>
-          </figure>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="propuesta" class="section section--soft">
+    <!-- Propuesta -->
+    <section id="propuesta" class="section section-soft">
       <div class="container">
-        <header class="section__head">
+        <header class="sectionHead">
           <h2>Propuesta educativa</h2>
           <p>Orden, cariño y aprendizaje en cada etapa.</p>
         </header>
 
-        <div class="features">
-          <article class="feature">
-            <div class="feature__icon feature__icon--yellow">⭐</div>
+        <div class="grid3">
+          <article class="card">
+            <div class="icon i-yellow">⭐</div>
             <h3>Valores y convivencia</h3>
-            <p>Formamos hábitos, respeto y responsabilidad con acompañamiento diario.</p>
+            <p>Formamos hábitos y convivencia positiva con acompañamiento diario.</p>
           </article>
-          <article class="feature">
-            <div class="feature__icon feature__icon--blue">📚</div>
+          <article class="card">
+            <div class="icon i-blue">📚</div>
             <h3>Aprendizaje significativo</h3>
             <p>Metodología activa para comprender, practicar y lograr resultados.</p>
           </article>
-          <article class="feature">
-            <div class="feature__icon feature__icon--green">🌱</div>
+          <article class="card">
+            <div class="icon i-green">🌱</div>
             <h3>Desarrollo integral</h3>
             <p>Fortalecemos lo académico y lo socioemocional en un entorno seguro.</p>
           </article>
         </div>
 
-        <div class="vmg">
+        <div class="grid3 vmg">
           <article class="card">
             <h3>Visión</h3>
             <p>Ser un colegio referente en San Miguel por formar estudiantes íntegros, felices y con sólido desempeño académico.</p>
@@ -149,15 +167,16 @@
       </div>
     </section>
 
+    <!-- Niveles -->
     <section id="niveles" class="section">
       <div class="container">
-        <header class="section__head">
+        <header class="sectionHead">
           <h2>Niveles</h2>
           <p>Lo que trabajamos en cada etapa.</p>
         </header>
 
-        <div class="levels">
-          <article class="level level--yellow">
+        <div class="grid3">
+          <article class="level l-yellow">
             <div class="level__head">
               <h3>Inicial</h3>
               <span class="chip">3, 4 y 5 años</span>
@@ -169,7 +188,7 @@
             </ul>
           </article>
 
-          <article class="level level--blue">
+          <article class="level l-blue">
             <div class="level__head">
               <h3>Primaria</h3>
               <span class="chip">1° a 6°</span>
@@ -181,58 +200,60 @@
             </ul>
           </article>
 
-          <article class="level level--green">
+          <article class="level l-green">
             <div class="level__head">
               <h3>Admisión 2026</h3>
               <span class="chip">Respuesta rápida</span>
             </div>
-            <p class="muted">Un solo formulario. Un solo botón. Te respondemos por WhatsApp.</p>
+            <p class="muted">Completa el formulario y se abrirá WhatsApp con tu mensaje listo.</p>
           </article>
         </div>
 
-        <div class="levels__cta">
-          <a class="btn btn--cta" href="#admisiones">Ir a formulario de Admisión 2026</a>
+        <div class="centerCta">
+          <a class="btn btn-cta" href="#admisiones">Ir al formulario de Admisión 2026</a>
         </div>
       </div>
     </section>
 
-    <section id="galeria" class="section section--band">
+    <!-- Galería -->
+    <section id="galeria" class="section section-band">
       <div class="container">
-        <header class="section__head">
+        <header class="sectionHead">
           <h2>Galería</h2>
           <p>Actividades y momentos del día a día escolar.</p>
         </header>
 
         <div class="gallery">
-          <figure class="gItem"><img src="assets/stock-primaria-1.png" alt="Alumno participando en clase" loading="lazy"></figure>
-          <figure class="gItem"><img src="assets/stock-inicial-1.png" alt="Niños de inicial en actividad" loading="lazy"></figure>
-          <figure class="gItem"><img src="assets/galeria-2.jpeg" alt="Actividad escolar con niños" loading="lazy"></figure>
-          <figure class="gItem"><img src="assets/galeria-3.jpeg" alt="Actividad escolar con niños" loading="lazy"></figure>
+          <figure class="gItem"><img data-src="assets/actividad-2.jpeg" alt="Actividad escolar con niños" loading="lazy"></figure>
+          <figure class="gItem"><img data-src="assets/actividad-3.jpeg" alt="Actividad escolar con niños" loading="lazy"></figure>
+          <figure class="gItem"><img data-src="assets/inicial-circulo.png" alt="Niños de inicial" loading="lazy"></figure>
+          <figure class="gItem"><img data-src="assets/primaria-mano-arriba.png" alt="Alumno participando" loading="lazy"></figure>
         </div>
       </div>
     </section>
 
-    <section id="admisiones" class="section section--cta">
-      <div class="container cta">
-        <div class="cta__copy">
+    <!-- Admisiones -->
+    <section id="admisiones" class="section section-cta">
+      <div class="container ctaGrid">
+        <div class="ctaCopy">
           <h2>Admisión 2026</h2>
-          <p class="cta__lead">Déjanos tus datos y se abrirá WhatsApp con el mensaje listo para enviarnos.</p>
+          <p class="lead2">Déjanos tus datos y te respondemos por WhatsApp.</p>
 
-          <div class="cta__checks">
-            <div class="check"><span class="dot dot--yellow"></span> Atención rápida</div>
-            <div class="check"><span class="dot dot--blue"></span> Orientación del grado</div>
-            <div class="check"><span class="dot dot--green"></span> Coordinación de visita</div>
-            <div class="check"><span class="dot dot--red"></span> Entrevista y matrícula</div>
+          <div class="steps">
+            <div class="step"><span class="dot d-yellow"></span> Llenas el formulario</div>
+            <div class="step"><span class="dot d-blue"></span> Se abre WhatsApp</div>
+            <div class="step"><span class="dot d-green"></span> Coordinamos visita</div>
+            <div class="step"><span class="dot d-red"></span> Matrícula</div>
           </div>
 
-          <div class="cta__mini">
+          <div class="mini">
             <div class="miniCard">
-              <div class="miniTitle">📍 Dirección</div>
-              <div class="miniText">Av. Libertad 2916 - San Miguel</div>
+              <div class="miniT">📍 Dirección</div>
+              <div class="miniV">Av. Libertad 2916 - San Miguel</div>
             </div>
             <div class="miniCard">
-              <div class="miniTitle">📲 WhatsApp</div>
-              <div class="miniText">+51 993 558 729</div>
+              <div class="miniT">📲 WhatsApp</div>
+              <div class="miniV">+51 993 558 729</div>
             </div>
           </div>
         </div>
@@ -240,18 +261,17 @@
         <form class="form" id="leadForm">
           <label>
             <span>Nombre completo</span>
-            <input name="nombre" type="text" placeholder="Ej. Valeria Palermo" required />
+            <input name="nombre" type="text" required placeholder="Ej. Valeria Palermo" />
           </label>
 
           <div class="row2">
             <label>
               <span>Teléfono</span>
-              <input name="telefono" type="tel" placeholder="+51 999 999 999" required />
+              <input name="telefono" type="tel" required placeholder="+51 999 999 999" />
             </label>
-
             <label>
               <span>Correo</span>
-              <input name="correo" type="email" placeholder="correo@ejemplo.com" required />
+              <input name="correo" type="email" required placeholder="correo@ejemplo.com" />
             </label>
           </div>
 
@@ -271,24 +291,25 @@
             </select>
           </label>
 
-          <button class="btn btn--cta btn--full" type="submit">Enviar por WhatsApp</button>
-          <p class="form__hint">En esta versión no se guardan datos en servidor. Solo se abre WhatsApp con tu mensaje.</p>
+          <button class="btn btn-cta btn-full" type="submit">Enviar por WhatsApp</button>
+          <p class="hint">* En esta versión no se guardan datos en servidor. Solo se abre WhatsApp con tu mensaje.</p>
         </form>
       </div>
     </section>
 
+    <!-- Contacto -->
     <section id="contacto" class="section">
       <div class="container">
-        <header class="section__head">
+        <header class="sectionHead">
           <h2>Contacto</h2>
           <p>Escríbenos para más información.</p>
         </header>
 
-        <div class="contact">
+        <div class="grid3">
           <article class="card">
             <h3>📍 Ubicación</h3>
             <p class="muted">Av. Libertad 2916 - San Miguel</p>
-            <a class="btn btn--ghost" target="_blank" rel="noopener"
+            <a class="btn btn-ghost" target="_blank" rel="noopener"
                href="https://www.google.com/maps/search/?api=1&query=Av.%20Libertad%202916%20San%20Miguel">
               Ver en Google Maps
             </a>
@@ -297,17 +318,17 @@
           <article class="card">
             <h3>📲 WhatsApp</h3>
             <p class="muted">+51 993 558 729</p>
-            <a class="btn btn--cta" href="https://wa.me/51993558729" target="_blank" rel="noopener">
+            <a class="btn btn-cta" href="https://wa.me/51993558729" target="_blank" rel="noopener">
               Escribir por WhatsApp
             </a>
           </article>
 
           <article class="card">
             <h3>🌐 Redes</h3>
-            <p class="muted">Pásame tus enlaces reales (Facebook e Instagram) y los dejo listos.</p>
+            <p class="muted">Pásame tus enlaces reales para dejarlos listos.</p>
             <div class="socials">
-              <a class="social" href="#" aria-label="Facebook (coloca tu enlace)">Facebook</a>
-              <a class="social" href="#" aria-label="Instagram (coloca tu enlace)">Instagram</a>
+              <a class="social" href="#" aria-label="Facebook">Facebook</a>
+              <a class="social" href="#" aria-label="Instagram">Instagram</a>
             </div>
           </article>
         </div>
@@ -328,9 +349,7 @@
     </div>
   </footer>
 
-  <a class="fab" href="https://wa.me/51993558729" target="_blank" rel="noopener" aria-label="WhatsApp">
-    WhatsApp
-  </a>
+  <a class="fab" href="https://wa.me/51993558729" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
 
   <script src="script.js"></script>
 </body>
